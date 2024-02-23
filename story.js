@@ -98,7 +98,7 @@ export default [
       "Angelo: Es sieht so aus, als ob wir Luca DeLucca einen Besuch abstatten müssen, um ihm die Waffe abkaufen. Vorher sollten wir aber noch zum Automaten Geld holen gehen",
     ],
     task: "Ziehe 10 Geld von deinem Konto ab (update set)",
-    sqlRequest: `UPDATE Mitglieder SET Kontostand = Kontostand -10 WHERE Vorname = 'Salvatore' AND Nachname = 'Martino';`,
+    sqlRequest: `UPDATE Mitglieder SET Kontostand = Kontostand - 10 WHERE Vorname = 'Salvatore' AND Nachname = 'Martino';`,
     sqlResult: [
       [
         "Vorname",
