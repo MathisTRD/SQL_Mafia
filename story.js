@@ -196,7 +196,7 @@ export default [
       "Angelo: Perfekt, jetzt haben wir auch eine Waffe. Nun müssen wir weiter Geld eintreiben. Am besten schauen wir uns einmal an, auf welche Personen derzeit Kopfgeld ausgesetzt ist. ",
     ],
     task: "Finde heraus, auf welche Personen das größte Kopfgeld ausgesetzt ist. (Kopfgeld oder Schutzgeld? Mmmmm)",
-    sqlRequest: `SELECT * FROM Opfer WHERE Art = Kopfgeld ODER BY Betrag DEC`,
+    sqlRequest: `SELECT * FROM Opfer WHERE Art = Kopfgeld ORDER BY Betrag DESC`,
     sqlResult: [
       ["Vorname", "Nachname", "Art", "Betrag"],
       ["Elena", "Russo", "Kopfgeld", 2030],
