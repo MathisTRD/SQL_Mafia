@@ -23,14 +23,14 @@ const init = () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    if (textArea.value === story[index].sqlRequest) renderNextStory();
+    if (textArea.value.trim() === story[index].sqlRequest) renderNextStory();
     else renderConsole("Falsche Antwort", "error");
   });
 
   textArea.addEventListener("keydown", (e) => {
     if (e.key !== "Enter") return textArea.value = "";
 
-    if (textArea.value === story[index].sqlRequest) renderNextStory();
+    if (textArea.value.trim() === story[index].sqlRequest) renderNextStory();
     else renderConsole("Falsche Antwort", "error");
   });
 };
