@@ -29,8 +29,6 @@ const init = () => {
 
   textArea.addEventListener("keydown", (e) => {
     if (e.key !== "Enter") return;
-    
-     textArea.value = "";
 
     if (textArea.value.trim() === story[index].sqlRequest) renderNextStory();
     else renderConsole("Falsche Antwort", "error");
